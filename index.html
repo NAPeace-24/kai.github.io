@@ -8,6 +8,13 @@
     </style>
 </head>
 <body>
-    <iframe src="https://drive.google.com/file/d/1rkrqO7kehxCn4X_bn9dovGCRnVFIFYFA/preview" allowfullscreen></iframe>
+    <iframe id="videoFrame" src="https://drive.google.com/file/d/1rkrqO7kehxCn4X_bn9dovGCRnVFIFYFA/preview" allow="autoplay; fullscreen"></iframe>
+
+    <script>
+        window.onload = function () {
+            var iframe = document.getElementById("videoFrame");
+            iframe.src += "?autoplay=1"; // Append autoplay parameter
+        };
+    </script>
 </body>
 </html>
